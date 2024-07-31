@@ -1,0 +1,22 @@
+.each-image {
+    width: 100%;
+    align-self: flex-start;
+    border-radius: 8px;
+}
+
+.each-card {
+    padding: 10px;
+}
+
+.price-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-now-button {
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+}

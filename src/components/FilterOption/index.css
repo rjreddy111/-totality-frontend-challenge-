@@ -1,0 +1,17 @@
+.filter-contaienr {
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.Filter-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.each-filter {
+    width: 80px;
+    
+}

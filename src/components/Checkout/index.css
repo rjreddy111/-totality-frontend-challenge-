@@ -1,0 +1,28 @@
+
+.checkout-main-page {
+    padding: 10px;
+}
+.enter-inputs {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.labeling {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.enter-checkout-data {
+    height: 20px;
+    border-radius: 5px;
+
+}
+
+.place-order-button {
+    background-color: aquamarine;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    border: none;
+}

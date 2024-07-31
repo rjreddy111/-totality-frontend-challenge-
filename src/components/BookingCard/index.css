@@ -1,0 +1,30 @@
+.booking-images {
+    width: 180px;
+    margin-right: 10px;
+}
+.cart-card {
+    display: flex;
+   
+}
+
+.each-cart-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity-button-reduce {
+    border: none;
+    color: red;
+    margin-right: 5px;
+}
+
+.quantity-button-increase {
+    border: none;
+    color: green;
+    margin-left: 5px;
+}
+
+.quantity-buttons-container {
+    display: flex;
+    width: 50%;
+}

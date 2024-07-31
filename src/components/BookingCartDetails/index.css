@@ -1,0 +1,28 @@
+.main-booking-cart {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-cart-containers {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.total-cost {
+    align-self: flex-start;
+}
+
+.checkout-button {
+    background-color: blueviolet;
+    border:none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    transition: all 0.5s ease;
+}
+.checkout-button:hover {
+    
+    background-color: blanchedalmond;
+    transform: scale(1.2);
+}
