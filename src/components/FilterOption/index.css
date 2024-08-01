@@ -11,6 +11,13 @@
     
 }
 
+@media screen and (min-width:767px) {
+    .filter-contaienr {
+        width: 400px;
+    }
+    
+}
+
 .each-filter {
     width: 80px;
     

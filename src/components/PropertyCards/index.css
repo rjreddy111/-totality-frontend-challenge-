@@ -9,6 +9,7 @@
 }
 
 .price-button-container {
+   
     display: flex;
     justify-content: space-between;
 }
@@ -19,4 +20,80 @@
     border-radius: 5px;
     height: 40px;
     width: 120px;
+    align-self: flex-end;
+}
+
+
+
+.book-now-button:active {
+    background-color: green;
+}
+
+.left-sontainer {
+    width: 60%;
+    line-height: 1.2;
+    
+}
+
+.aminities-container {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type:disc;
+}
+
+@media  screen and (min-width:767px) {
+    .aminities-container {
+        width: 340px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15px;
+    }
+    .price-button-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .book-now-button {
+        align-self: flex-start;
+    }
+    .each-image {
+        width: 90%;
+        height: 400px;
+    }
+    .content-container {
+        width: 90%;
+    }
+    .each-card {
+        width: 48%;
+        
+    }
+    
+    
+}
+.price-color {
+    color: red;
+}
+
+.each-emities {
+    margin-right: 10px;
+}
+
+.location {
+    color: brown;
+    background-color: blanchedalmond;
+    padding: 3px;
+}
+.bedrooms {
+    color: orange;
+}
+
+h3 {
+    color: green;
+
+}
+h3:hover {
+    color :red;
 }

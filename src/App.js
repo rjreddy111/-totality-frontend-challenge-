@@ -1,13 +1,13 @@
 
 import { Component } from 'react';
 import {v4 as uuidv4} from "uuid"
-import {BrowserRouter ,Routes,Route,} from "react-router-dom"
+import { Routes,Route,} from "react-router-dom"
 
 import './App.css';
 
 
 import PropertyListing from "./components/PropertyListing"
-import FilterOption from './components/FilterOption';
+
 import BookingCartDetails from "./components/BookingCartDetails"
 import Checkout from "./components/Checkout"
 import Header from "./components/Header"
@@ -240,12 +240,19 @@ class App extends Component{
   const {allProperties} = this.state 
    
 
-  
+   if (name === "location") {
     const getResults = allProperties.filter((eachPropperty)=> eachPropperty.location.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
     
   
   
   this.setState({allProperties:getResults})
+   }
+   if (name === "min price") {
+    const getResults = allProperties.filter((eachPropperty)=> eachPropperty.price >= value)
+    this.setState({allProperties:getResults})
+   }
+   
+   
  }
 
 
@@ -256,7 +263,7 @@ class App extends Component{
     return(
      
       <>
-      <Header />
+        <Header />
       
         
         
@@ -271,7 +278,7 @@ class App extends Component{
               />
             } /> 
 
-             <Route path = "/cart"  element={
+            <Route path = "/cart"  element={
               <BookingCartDetails
                 cartDetails={cartDetails}
                 onDecrease={this.onDecreaseQuantity}
@@ -279,7 +286,7 @@ class App extends Component{
               />
             }
           />
-             <Route path = "/checkout" element={
+            <Route path = "/checkout" element={
               <Checkout
                 cartDetails={cartDetails}
               />

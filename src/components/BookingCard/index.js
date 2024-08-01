@@ -11,15 +11,15 @@ const BookingCard =(props)=> {
             
             <img src = {propertyDetails.image} alt = "booking property" className="booking-images" />
             <div  className="each-cart-item">
-            <h5>{propertyDetails.title}</h5>
-            
-            
-            <p>Price : ${propertyDetails.price} </p>  
-            <div className="quantity-buttons-container">
-                <button className="quantity-button-reduce" onClick={()=>onDecrease(propertyDetails)}>-</button>  
+                <h5>{propertyDetails.title}</h5>
+                
+                
+                <p>Price : ${propertyDetails.price} </p>  
+                <div className="quantity-buttons-container">
+                    <button className="quantity-button-reduce" onClick={()=>onDecrease(propertyDetails)}>-</button>  
                                                  {propertyDetails.quantity} 
-                <button className="quantity-button-increase" onClick={()=>onIncrease(propertyDetails)}>+</button>
-                                                </div>
+                    <button className="quantity-button-increase" onClick={()=>onIncrease(propertyDetails)}>+</button>
+                </div>
             </div>
         </div>
     )

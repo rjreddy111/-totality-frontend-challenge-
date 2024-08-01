@@ -9,6 +9,17 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (min-width:767px) {
+    .booking-cart-containers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+    
+}
+
 .total-cost {
     align-self: flex-start;
 }
@@ -25,4 +36,30 @@
     
     background-color: blanchedalmond;
     transform: scale(1.2);
+}
+
+.no-item-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.no-cart {
+    width: 300px;
+}
+
+.home-button {
+    background-color: antiquewhite;
+    border: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: blue;
 }

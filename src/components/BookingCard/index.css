@@ -1,10 +1,23 @@
 .booking-images {
     width: 180px;
     margin-right: 10px;
+    border-radius: 6px;
 }
 .cart-card {
     display: flex;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px grey ;
    
+}
+
+@media screen and (min-width:767px) {
+    .cart-card {
+        margin-right: 10px;
+    }
+    
 }
 
 .each-cart-item {

@@ -15,7 +15,7 @@ class PropertyListing extends Component {
         return (
             <>   
             <FilterOption filter = {filter}/>
-            <div className="property-list-main-page">
+            
                 <ul className="unorder-property-list">
                 {allProperties.map((eachProperties)=> (
                     <PropertyCards key = {eachProperties.id} property = {eachProperties} onBookNowButton={onBookNowButton} />
@@ -23,7 +23,7 @@ class PropertyListing extends Component {
                 ))}
                 </ul>
 
-            </div>
+            
             </>
 
         )

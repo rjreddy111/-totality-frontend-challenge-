@@ -34,42 +34,44 @@ class Checkout extends Component {
                 <div>
                     <h3>Contact Information</h3>
                     <div className="enter-inputs">
-                    <label className="labeling">Name</label>
-                    <input type ="text" placeholder="Enter Your Name" className="enter-checkout-data" required />
+                        <label className="labeling">Name</label>
+                        <input type ="text" placeholder="Enter Your Name" className="enter-checkout-data" required />
                     </div>
 
                     <br/>
                     
                     <div className="enter-inputs">
-                    <label className="labeling">Email</label>
-                    <input type ="email" placeholder="Enter Your Email " className="enter-checkout-data" required/>
+                        <label className="labeling">Email</label>
+                        <input type ="email" placeholder="Enter Your Email " className="enter-checkout-data" required/>
                     
                     </div>
                     <br/>
                     <div className="enter-inputs">
-                    <label className="labeling">Phone Number</label>
-                    <input type ="numbers" placeholder="Enter your phone Number" className="enter-checkout-data" required/>
+                        <label className="labeling">Phone Number</label>
+                        <input type ="number" placeholder="Enter your phone Number" className="enter-checkout-data" required/>
                     </div>
                 </div>
                 <div>
                     <h3>Payment Details</h3>
                     <div className="enter-inputs">
-                    <label className="labeling">Card Number</label>
-                    <input type ="number" placeholder="Enter Card Number" className="enter-checkout-data" required />
+                        <label className="labeling">Card Number</label>
+                        <input type ="number" placeholder="Enter Card Number" className="enter-checkout-data" required />
                     </div>
                     <br/>
                     <div className="enter-inputs">                    
                         <label className="labeling">Valid through</label>
-                    <input type = "text" placeholder="Enter expiration Date" className="enter-checkout-data" required/>
+                        <input type = "text" placeholder="Enter expiration Date" className="enter-checkout-data" required/>
                     </div>
                     <br/>
                     <div className="enter-inputs">
 
-                    <label className="labeling">CVV</label>
-                    <input type ="number" placeholder="Enter CVV" className="enter-checkout-data" required />
+                        <label className="labeling">CVV</label>
+                        <input type ="number" placeholder="Enter CVV" className="enter-checkout-data" required />
                     </div>
 
                 </div>
+                <br/>
+                <br/>
                 <p>Total amount to be paid <b>${total}/month  </b></p>
                 <button className="place-order-button">Place Order</button>
 

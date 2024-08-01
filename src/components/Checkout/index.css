@@ -8,6 +8,13 @@
     justify-content: space-between;
 
 }
+@media screen and (min-width:767px) {
+    .enter-inputs {
+        width: 50%;
+    }
+    
+}
+
 .labeling {
     width: 250px;
     margin-right: 10px;
@@ -16,7 +23,17 @@
 .enter-checkout-data {
     height: 20px;
     border-radius: 5px;
+    border: 1px solid grey;
 
+}
+
+@media screen and (min-width:767px) {
+    .enter-checkout-data {
+        width: 350px;
+     
+        height: 30px;
+    }
+    
 }
 
 .place-order-button {
@@ -25,4 +42,10 @@
     height: 40px;
     width: 120px;
     border: none;
+    transition: 0.5s ease-in;
+}
+
+.place-order-button:hover {
+    background-color: cadetblue;
+    transform: scale(1.2);
 }

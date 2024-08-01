@@ -1,8 +1,23 @@
 .unorder-property-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     padding-left: 0px;
+    width: 100%;
+    flex-wrap: wrap;
     
 
 }
+.property-list-main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:767px) {
+    .unorder-property-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
